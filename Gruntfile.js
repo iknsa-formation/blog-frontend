@@ -4,24 +4,19 @@ module.exports = function(grunt) {
 
     var appConfig = grunt.file.readJSON('package.json');
 
-    // require('time-grunt')(grunt);
     var pathsConfig = function () {
 
         return {
             dist       : 'dist/',
+            bower      : 'bower_components/',
             css        : 'dist/css',
             js         : 'dist/js',
             fonts      : 'dist/css/fonts',
-            icons_fonts: 'dist/css/icons_fonts',
-            img        : 'dist/img',
-            dev_css    : 'vendor/vahana/vahana-landing/scss',
-            dev_js     : 'vendor/vahana/vahana-landing/js',
-            dev_fonts  : 'vendor/vahana/vahana-landing/scss/fonts',
-            dev_icons_fonts  : 'vendor/vahana/vahana-landing/scss/icons_fonts',
-            dev_img    : 'vendor/vahana/vahana-landing/img',
+            icon_fonts : 'dist/css/icon-fonts',
+            img        : 'dist/'
         };
     };
-    
+
     // Project configuration.
     grunt.initConfig({
 
@@ -46,11 +41,11 @@ module.exports = function(grunt) {
         compass: {
             dev: {
                 options: {
-                  sassDir        : '<%= paths.dev_css%>',
-                  cssDir         : '<%= paths.css %>',
+                  sassDir        : 'vendor/',
+                  cssDir         : 'dist/vendor/',
                   http_fonts_path: "fonts/",
-                  fontsDir       : '<%= paths.fonts %>',
-                  environment    : 'production',
+                  fontsDir       : 'vendor/fonts',
+                  environment    : 'development',
                   require        : 'susy',
                   require        : 'compass',
                 }
@@ -59,11 +54,11 @@ module.exports = function(grunt) {
 
         watch: {
             compass: {
-                files: ['<%= paths.dev_css %>/**/*.{scss,sass}'],
+                files: ['vendor/**/*.{scss,sass}'],
                 tasks: ['compass']
             },
             js: {
-                files: ['<%= paths.dev_js %>/**/*.js'],
+                files: ['vendor/**/*.js'],
                 tasks: ['concat:js']
             }
         },
@@ -85,24 +80,30 @@ module.exports = function(grunt) {
                     // {expand: true, cwd: 'path/', src: ['**'], dest: 'dest/'},
              
                     // flattens results to a single level 
+                    // {
+                    //     expand: true, flatten: true, 
+                    //     src: ['vendor/jquery/dist/jquery.min.js', 'vendor/jquery/dist/jquery.min.map'], 
+                    //     dest: '<%= paths.js %>', filter: 'isFile'
+                    // },
+                    // includes files within path and its sub-directories 
                     {
-                        expand: true, flatten: true, 
-                        src: ['vendor/jquery/dist/jquery.min.js', 'vendor/jquery/dist/jquery.min.map'], 
-                        dest: '<%= paths.js %>', filter: 'isFile'
+                        expand: true,
+                        src: ['vendor/**/*.js'],
+                        dest: 'dist/'
                     },
                     {
                         expand: true, flatten: true,
-                        src: ['<%= paths.dev_fonts %>/**/*'], 
+                        src: ['vendor/fonts/**/*'], 
                         dest: '<%= paths.fonts %>'
                     },
                     {
                         expand: true, flatten: true,
-                        src: ['<%= paths.dev_icons_fonts %>/**/*'], 
+                        src: ['vendor/icon-fonts/**/*'], 
                         dest: '<%= paths.icons_fonts %>'
                     },
                     {
                         expand: true, flatten: true,
-                        src: ['<%= paths.dev_img %>/**/*'], 
+                        src: ['vendor/img'], 
                         dest: '<%= paths.img %>'
                     }
                 ],
@@ -113,23 +114,23 @@ module.exports = function(grunt) {
             options: {
                 banner      : '<%= banner %>',
             },
-            vendor_css: {
+            lib_css: {
                 src : [
-                    'vendor/normalize.css/normalize.css',
-                    'vendor/ks-normalize/dist/css/ks-normalize.min.css',
-                    'vendor/ks-buttons/dist/css/ks-buttons.min.css'
+                    'bower_components/normalize.css/normalize.css',
+                    'bower_components/ks-normalize/dist/css/ks-normalize.min.css',
+                    'bower_components/ks-buttons/dist/css/ks-buttons.min.css'
                 ],
-                dest: '<%= paths.css %>/vendor.css',
+                dest: '<%= paths.css %>/lib.css',
             },
-            vendor_js: {
-                src : [
-                ],
-                dest: '<%= paths.js %>/vendor.js',
-            },
-            js: {
-                src : ['<%= paths.dev_js %>/**/*.js'],
-                dest: '<%= paths.js %>/app.js'
-            },
+            // lib_js: {
+            //     src : [
+            //     ],
+            //     dest: '<%= paths.js %>/lib.js',
+            // },
+            // js: {
+            //     src : ['vendor/**/*.js'],
+            //     dest: '<%= paths.js %>/app.js'
+            // },
         },
 
         // cssmin: {
@@ -165,9 +166,10 @@ module.exports = function(grunt) {
     ]);
 
     grunt.registerTask('build', [
-        'clean', 'compass', 'copy', 'concat'
+        'clean:dist', 'compass', 'copy', 'concat'
+        // 'clean:dist', 'concat'
     ]);
 
-    grunt.registerTask("default", ["clean", 'build']);
+    grunt.registerTask("default", ['build']);
     
 };
