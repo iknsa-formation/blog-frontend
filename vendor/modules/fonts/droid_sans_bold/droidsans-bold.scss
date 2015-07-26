@@ -1,0 +1,631 @@
+@font-face {
+	font-family: "iknsa";
+	src: url("droidsans-bold.eot");
+	src: url("droidsans-bold.eot#iefix") format("embedded-opentype"),
+	url("droidsans-bold.woff") format("woff"),
+	url("droidsans-bold.ttf") format("truetype"),
+	url("droidsans-bold.svg") format("svg");
+	font-weight: normal;
+	font-style: normal;
+}
+[class^="iknsa-"]:before, [class*=" iknsa-"]:before,
+[class^="iknsa-"]:after, [class*=" iknsa-"]:after {   
+	font-family: iknsa;
+        font-size: 20px;
+font-style: normal;
+margin-left: 20px;
+}.iknsa-exclam:before {
+	content: "\21";
+}
+.iknsa-quotedbl:before {
+	content: "\22";
+}
+.iknsa-numbersign:before {
+	content: "\23";
+}
+.iknsa-dollar:before {
+	content: "\24";
+}
+.iknsa-percent:before {
+	content: "\25";
+}
+.iknsa-ampersand:before {
+	content: "\26";
+}
+.iknsa-quotesingle:before {
+	content: "\27";
+}
+.iknsa-parenleft:before {
+	content: "\28";
+}
+.iknsa-parenright:before {
+	content: "\29";
+}
+.iknsa-asterisk:before {
+	content: "\2a";
+}
+.iknsa-plus:before {
+	content: "\2b";
+}
+.iknsa-comma:before {
+	content: "\2c";
+}
+.iknsa-hyphen:before {
+	content: "\2d";
+}
+.iknsa-period:before {
+	content: "\2e";
+}
+.iknsa-slash:before {
+	content: "\2f";
+}
+.iknsa-zero:before {
+	content: "\30";
+}
+.iknsa-one:before {
+	content: "\31";
+}
+.iknsa-two:before {
+	content: "\32";
+}
+.iknsa-three:before {
+	content: "\33";
+}
+.iknsa-four:before {
+	content: "\34";
+}
+.iknsa-five:before {
+	content: "\35";
+}
+.iknsa-six:before {
+	content: "\36";
+}
+.iknsa-seven:before {
+	content: "\37";
+}
+.iknsa-eight:before {
+	content: "\38";
+}
+.iknsa-nine:before {
+	content: "\39";
+}
+.iknsa-colon:before {
+	content: "\3a";
+}
+.iknsa-semicolon:before {
+	content: "\3b";
+}
+.iknsa-less:before {
+	content: "\3c";
+}
+.iknsa-equal:before {
+	content: "\3d";
+}
+.iknsa-greater:before {
+	content: "\3e";
+}
+.iknsa-question:before {
+	content: "\3f";
+}
+.iknsa-at:before {
+	content: "\40";
+}
+.iknsa-A:before {
+	content: "\41";
+}
+.iknsa-B:before {
+	content: "\42";
+}
+.iknsa-C:before {
+	content: "\43";
+}
+.iknsa-D:before {
+	content: "\44";
+}
+.iknsa-E:before {
+	content: "\45";
+}
+.iknsa-F:before {
+	content: "\46";
+}
+.iknsa-G:before {
+	content: "\47";
+}
+.iknsa-H:before {
+	content: "\48";
+}
+.iknsa-I:before {
+	content: "\49";
+}
+.iknsa-J:before {
+	content: "\4a";
+}
+.iknsa-K:before {
+	content: "\4b";
+}
+.iknsa-L:before {
+	content: "\4c";
+}
+.iknsa-M:before {
+	content: "\4d";
+}
+.iknsa-N:before {
+	content: "\4e";
+}
+.iknsa-O:before {
+	content: "\4f";
+}
+.iknsa-P:before {
+	content: "\50";
+}
+.iknsa-Q:before {
+	content: "\51";
+}
+.iknsa-R:before {
+	content: "\52";
+}
+.iknsa-S:before {
+	content: "\53";
+}
+.iknsa-T:before {
+	content: "\54";
+}
+.iknsa-U:before {
+	content: "\55";
+}
+.iknsa-V:before {
+	content: "\56";
+}
+.iknsa-W:before {
+	content: "\57";
+}
+.iknsa-X:before {
+	content: "\58";
+}
+.iknsa-Y:before {
+	content: "\59";
+}
+.iknsa-Z:before {
+	content: "\5a";
+}
+.iknsa-bracketleft:before {
+	content: "\5b";
+}
+.iknsa-backslash:before {
+	content: "\5c";
+}
+.iknsa-bracketright:before {
+	content: "\5d";
+}
+.iknsa-asciicircum:before {
+	content: "\5e";
+}
+.iknsa-underscore:before {
+	content: "\5f";
+}
+.iknsa-grave:before {
+	content: "\60";
+}
+.iknsa-a:before {
+	content: "\61";
+}
+.iknsa-b:before {
+	content: "\62";
+}
+.iknsa-c:before {
+	content: "\63";
+}
+.iknsa-d:before {
+	content: "\64";
+}
+.iknsa-e:before {
+	content: "\65";
+}
+.iknsa-f:before {
+	content: "\66";
+}
+.iknsa-g:before {
+	content: "\67";
+}
+.iknsa-h:before {
+	content: "\68";
+}
+.iknsa-i:before {
+	content: "\69";
+}
+.iknsa-j:before {
+	content: "\6a";
+}
+.iknsa-k:before {
+	content: "\6b";
+}
+.iknsa-l:before {
+	content: "\6c";
+}
+.iknsa-m:before {
+	content: "\6d";
+}
+.iknsa-n:before {
+	content: "\6e";
+}
+.iknsa-o:before {
+	content: "\6f";
+}
+.iknsa-p:before {
+	content: "\70";
+}
+.iknsa-q:before {
+	content: "\71";
+}
+.iknsa-r:before {
+	content: "\72";
+}
+.iknsa-s:before {
+	content: "\73";
+}
+.iknsa-t:before {
+	content: "\74";
+}
+.iknsa-u:before {
+	content: "\75";
+}
+.iknsa-v:before {
+	content: "\76";
+}
+.iknsa-w:before {
+	content: "\77";
+}
+.iknsa-x:before {
+	content: "\78";
+}
+.iknsa-y:before {
+	content: "\79";
+}
+.iknsa-z:before {
+	content: "\7a";
+}
+.iknsa-braceleft:before {
+	content: "\7b";
+}
+.iknsa-bar:before {
+	content: "\7c";
+}
+.iknsa-braceright:before {
+	content: "\7d";
+}
+.iknsa-asciitilde:before {
+	content: "\7e";
+}
+.iknsa-exclamdown:before {
+	content: "\a1";
+}
+.iknsa-cent:before {
+	content: "\a2";
+}
+.iknsa-sterling:before {
+	content: "\a3";
+}
+.iknsa-currency:before {
+	content: "\a4";
+}
+.iknsa-yen:before {
+	content: "\a5";
+}
+.iknsa-brokenbar:before {
+	content: "\a6";
+}
+.iknsa-section:before {
+	content: "\a7";
+}
+.iknsa-dieresis:before {
+	content: "\a8";
+}
+.iknsa-copyright:before {
+	content: "\a9";
+}
+.iknsa-ordfeminine:before {
+	content: "\aa";
+}
+.iknsa-guillemotleft:before {
+	content: "\ab";
+}
+.iknsa-logicalnot:before {
+	content: "\ac";
+}
+.iknsa-uni00AD:before {
+	content: "\ad";
+}
+.iknsa-registered:before {
+	content: "\ae";
+}
+.iknsa-overscore:before {
+	content: "\af";
+}
+.iknsa-degree:before {
+	content: "\b0";
+}
+.iknsa-plusminus:before {
+	content: "\b1";
+}
+.iknsa-twosuperior:before {
+	content: "\b2";
+}
+.iknsa-threesuperior:before {
+	content: "\b3";
+}
+.iknsa-acute:before {
+	content: "\b4";
+}
+.iknsa-mu:before {
+	content: "\b5";
+}
+.iknsa-paragraph:before {
+	content: "\b6";
+}
+.iknsa-periodcentered:before {
+	content: "\b7";
+}
+.iknsa-cedilla:before {
+	content: "\b8";
+}
+.iknsa-onesuperior:before {
+	content: "\b9";
+}
+.iknsa-ordmasculine:before {
+	content: "\ba";
+}
+.iknsa-guillemotright:before {
+	content: "\bb";
+}
+.iknsa-onequarter:before {
+	content: "\bc";
+}
+.iknsa-onehalf:before {
+	content: "\bd";
+}
+.iknsa-threequarters:before {
+	content: "\be";
+}
+.iknsa-questiondown:before {
+	content: "\bf";
+}
+.iknsa-Agrave:before {
+	content: "\c0";
+}
+.iknsa-Aacute:before {
+	content: "\c1";
+}
+.iknsa-Acircumflex:before {
+	content: "\c2";
+}
+.iknsa-Atilde:before {
+	content: "\c3";
+}
+.iknsa-Adieresis:before {
+	content: "\c4";
+}
+.iknsa-Aring:before {
+	content: "\c5";
+}
+.iknsa-AE:before {
+	content: "\c6";
+}
+.iknsa-Ccedilla:before {
+	content: "\c7";
+}
+.iknsa-Egrave:before {
+	content: "\c8";
+}
+.iknsa-Eacute:before {
+	content: "\c9";
+}
+.iknsa-Ecircumflex:before {
+	content: "\ca";
+}
+.iknsa-Edieresis:before {
+	content: "\cb";
+}
+.iknsa-Igrave:before {
+	content: "\cc";
+}
+.iknsa-Iacute:before {
+	content: "\cd";
+}
+.iknsa-Icircumflex:before {
+	content: "\ce";
+}
+.iknsa-Idieresis:before {
+	content: "\cf";
+}
+.iknsa-Eth:before {
+	content: "\d0";
+}
+.iknsa-Ntilde:before {
+	content: "\d1";
+}
+.iknsa-Ograve:before {
+	content: "\d2";
+}
+.iknsa-Oacute:before {
+	content: "\d3";
+}
+.iknsa-Ocircumflex:before {
+	content: "\d4";
+}
+.iknsa-Otilde:before {
+	content: "\d5";
+}
+.iknsa-Odieresis:before {
+	content: "\d6";
+}
+.iknsa-multiply:before {
+	content: "\d7";
+}
+.iknsa-Oslash:before {
+	content: "\d8";
+}
+.iknsa-Ugrave:before {
+	content: "\d9";
+}
+.iknsa-Uacute:before {
+	content: "\da";
+}
+.iknsa-Ucircumflex:before {
+	content: "\db";
+}
+.iknsa-Udieresis:before {
+	content: "\dc";
+}
+.iknsa-Yacute:before {
+	content: "\dd";
+}
+.iknsa-Thorn:before {
+	content: "\de";
+}
+.iknsa-germandbls:before {
+	content: "\df";
+}
+.iknsa-agrave:before {
+	content: "\e0";
+}
+.iknsa-aacute:before {
+	content: "\e1";
+}
+.iknsa-acircumflex:before {
+	content: "\e2";
+}
+.iknsa-atilde:before {
+	content: "\e3";
+}
+.iknsa-adieresis:before {
+	content: "\e4";
+}
+.iknsa-aring:before {
+	content: "\e5";
+}
+.iknsa-ae:before {
+	content: "\e6";
+}
+.iknsa-ccedilla:before {
+	content: "\e7";
+}
+.iknsa-egrave:before {
+	content: "\e8";
+}
+.iknsa-eacute:before {
+	content: "\e9";
+}
+.iknsa-ecircumflex:before {
+	content: "\ea";
+}
+.iknsa-edieresis:before {
+	content: "\eb";
+}
+.iknsa-igrave:before {
+	content: "\ec";
+}
+.iknsa-iacute:before {
+	content: "\ed";
+}
+.iknsa-icircumflex:before {
+	content: "\ee";
+}
+.iknsa-idieresis:before {
+	content: "\ef";
+}
+.iknsa-eth:before {
+	content: "\f0";
+}
+.iknsa-ntilde:before {
+	content: "\f1";
+}
+.iknsa-ograve:before {
+	content: "\f2";
+}
+.iknsa-oacute:before {
+	content: "\f3";
+}
+.iknsa-ocircumflex:before {
+	content: "\f4";
+}
+.iknsa-otilde:before {
+	content: "\f5";
+}
+.iknsa-odieresis:before {
+	content: "\f6";
+}
+.iknsa-divide:before {
+	content: "\f7";
+}
+.iknsa-oslash:before {
+	content: "\f8";
+}
+.iknsa-ugrave:before {
+	content: "\f9";
+}
+.iknsa-uacute:before {
+	content: "\fa";
+}
+.iknsa-ucircumflex:before {
+	content: "\fb";
+}
+.iknsa-udieresis:before {
+	content: "\fc";
+}
+.iknsa-yacute:before {
+	content: "\fd";
+}
+.iknsa-thorn:before {
+	content: "\fe";
+}
+.iknsa-ydieresis:before {
+	content: "\ff";
+}
+.iknsa-dotlessi:before {
+	content: "\131";
+}
+.iknsa-circumflex:before {
+	content: "\2c6";
+}
+.iknsa-ring:before {
+	content: "\2da";
+}
+.iknsa-tilde:before {
+	content: "\2dc";
+}
+.iknsa-endash:before {
+	content: "\2013";
+}
+.iknsa-emdash:before {
+	content: "\2014";
+}
+.iknsa-quoteleft:before {
+	content: "\2018";
+}
+.iknsa-quoteright:before {
+	content: "\2019";
+}
+.iknsa-quotesinglbase:before {
+	content: "\201a";
+}
+.iknsa-quotedblleft:before {
+	content: "\201c";
+}
+.iknsa-quotedblright:before {
+	content: "\201d";
+}
+.iknsa-quotedblbase:before {
+	content: "\201e";
+}
+.iknsa-bullet:before {
+	content: "\2022";
+}
+.iknsa-guilsinglleft:before {
+	content: "\2039";
+}
+.iknsa-guilsinglright:before {
+	content: "\203a";
+}
+.iknsa-fraction:before {
+	content: "\2044";
+}

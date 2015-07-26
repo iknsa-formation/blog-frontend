@@ -2,7 +2,7 @@
 
 section {
     padding: 0 25px;
-    margin-top: 20px;
+    margin-top: 40px;
 }
 
 figure {
@@ -25,15 +25,16 @@ figure {
 }
 
 .details-container {
-    background:$light-color;
+    background:$lighter-color;
 
     .details {
         position: relative;;
-        z-index: 1000;
-        background:$light-color;
+        z-index: 900;
+        background:$lighter-color;
         width: 94%;
         margin: -50px auto 0;
         padding: 15px;
+        color: $dark-color;
 
         ul {
             padding-bottom: 15px;
@@ -62,8 +63,10 @@ figure {
         }
 
         .date {
+            float: left;
             width: 55px;
             height: 55px;
+            padding-top: 2px;
             background:$design-color;
             color: $lighter-color;
             @include border-radius(3px);
@@ -72,13 +75,40 @@ figure {
                 display: block;
                 text-align: center;
                 font-weight: bold;
-                    font-size: 14px;
 
+                &.day {
+                    font-size: 16px;
+                }
                 &.month {
+                    font-size: 14px;
                     font-weight: normal;
                 }
                 &.year {
                     font-weight: normal;
+                    font-size: 12px;
+                }
+            }
+        }
+
+        h1 {
+            float: right;
+            width: calc(100% - 65px);
+            margin: 0;
+            font-size: 24px;
+            font-family: iknsa;
+            font-weight: 400;
+        }
+
+        p {
+            clear: both;
+            margin-top: 15px;
+            padding-top: 20px;
+            font-size: 14px;
+            color: #444444;
+
+            a {
+                &:hover, &.hover {
+                    text-decoration: none;
                 }
             }
         }

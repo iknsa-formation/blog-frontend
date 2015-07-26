@@ -11,7 +11,6 @@ module.exports = function(grunt) {
             bower      : 'bower_components/',
             css        : 'dist/css',
             js         : 'dist/js',
-            fonts      : 'dist/css/fonts',
             icon_fonts : 'dist/css/icon-fonts',
             img        : 'dist/'
         };
@@ -92,16 +91,6 @@ module.exports = function(grunt) {
                     // includes files within path and its sub-directories 
                     {
                         expand: true, flatten: true,
-                        src: ['vendor/fonts/**/*'], 
-                        dest: '<%= paths.fonts %>'
-                    },
-                    {
-                        expand: true, flatten: true,
-                        src: ['vendor/icon-fonts/**/*'], 
-                        dest: '<%= paths.icons_fonts %>'
-                    },
-                    {
-                        expand: true, flatten: true,
                         src: ['vendor/img'], 
                         dest: '<%= paths.img %>'
                     }
@@ -121,6 +110,15 @@ module.exports = function(grunt) {
                     {
                         expand: true,
                         src: ['vendor/**/*.{png,jpg,jpeg,gif,bmp}'],
+                        dest: 'dist/'
+                    },
+                ]
+            },
+            fonts: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['vendor/**/*.{eot,otf,svg,ttf,woff}'],
                         dest: 'dist/'
                     },
                 ]
