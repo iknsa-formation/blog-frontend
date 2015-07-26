@@ -1,0 +1,22 @@
+@import "../variables";
+
+.main-sidebar
+{
+    width: 24%;
+    border-left: 1px solid #E3E3E3;
+    border-right: 1px solid #E3E3E3;
+    background:$light-color;
+
+    h5 {
+        font-family: $title-font-family;
+        font-size: 16px;
+        font-weight: bold;
+        background:$success-color;
+        color: $light-color;
+        border-top: 1px solid #E3E3E3;
+        border-bottom: 1px solid #E3E3E3;
+        margin: 0;
+        padding: 5px 25px;
+        line-height: 35px;
+    }
+}

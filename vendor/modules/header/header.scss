@@ -9,6 +9,8 @@ header
     padding: 0 15px;
     overflow: auto;
     position: fixed;
+    top: 0;
+    z-index: 1000;
 
     &:after {
         clear: both;

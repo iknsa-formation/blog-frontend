@@ -1,0 +1,15 @@
+@import "../variables";
+
+.popular-tags
+{
+    padding: 15px;
+    h6 {
+        display: inline-block;
+        background:$caution-color;
+        padding: 5px 10px;
+        margin: 5px;
+        color: $lighter-color;
+        position: relative;
+        @include border-radius(3px);
+    }
+}

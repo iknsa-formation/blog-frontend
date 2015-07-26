@@ -1,6 +1,8 @@
+@import "compass";
+
 $dark-color: #333333; // Dark Grey
 $darker-color: #272727; // Darker Grey
-$light-color: #FFFFFF; // Light grey
+$light-color: #fcfcfc; // Light grey
 $lighter-color: white; // white
 
 $primary-color: #0099cc; // Blue
@@ -8,3 +10,7 @@ $common-color: #444444; // Grey which is lighter than dark-color
 $design-color: #ff5721; // Orange
 $caution-color: #f9c011; // Yellow
 $success-color: #7cc34d; // Green
+
+$title-font-family: Arial, Helvetica, sans-serif;
+$common-font-family: Arial, Helvetica, sans-serif;
+$design-font-family: Droid, Arial, Helvetica, sans-serif;

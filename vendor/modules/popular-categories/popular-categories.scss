@@ -1,0 +1,32 @@
+@import "../variables";
+
+.pupular-categories
+{
+    h6 {
+        font-size: 16px;
+        color: $dark-color;
+        font-weight: 400;
+        margin: 10px 0;
+        padding: 5px 15px;
+
+        &:hover, &.hover {
+            color: $primary-color;
+
+            span {
+                color: $primary-color;
+                background:darken($caution-color, 3);
+            }
+        }
+
+        span {
+            float: right;
+            display: inline-block;
+            padding: 5px;
+            background:$caution-color;
+            position: relative;
+            top: -5px;
+            color: $light-color;
+            @include border-radius(3px);
+        }
+    }
+}
