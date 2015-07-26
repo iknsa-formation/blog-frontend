@@ -3,12 +3,12 @@
 header
 {
     background:$dark-color;
-    max-width: 100%;
+    width: 100%;
     color: $lighter-color;
-    // height: 60px;
     clear: both;
     padding: 0 15px;
     overflow: auto;
+    position: fixed;
 
     &:after {
         clear: both;
