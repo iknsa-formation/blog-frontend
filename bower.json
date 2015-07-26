@@ -20,6 +20,6 @@
     "tests"
   ],
   "devDependencies": {
-    "iknsa-frontend-framework": "~0.0.1"
+    "ks-normalize": "~0.0.2"
   }
 }

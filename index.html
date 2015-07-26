@@ -12,19 +12,42 @@
     <meta name="viewport" content="width=device-width, user-scalable = yes">
 
     <link rel="stylesheet" href="dist/css/lib.css">
+    <link rel="stylesheet" href="dist/css/normalize.css">
     <link rel="stylesheet" href="dist/vendor/modules/base/base.css">
+    <link rel="stylesheet" href="dist/vendor/modules/header/header.css">
+    <link rel="stylesheet" href="dist/vendor/modules/logo/logo.css">
+    <link rel="stylesheet" href="dist/vendor/modules/nav/nav.css">
+    <link rel="stylesheet" href="dist/vendor/modules/search/search.css">
 </head>
 <body>
     <!--[if lt IE 7]>
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
     <![endif]-->
-    
-    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolor cum beatae natus temporibus labore quod facere quaerat vero deleniti laboriosam aspernatur accusamus deserunt, eius sit quasi id illo repellendus perspiciatis?
+    <header>
+        <div id="logo">
+            <img src="dist/vendor/modules/logo/img/logo.png" alt="IKNSA - Blog logo">
+        </div>
+        <nav>
+            <ul>
+                <li class="primary-color"><a href="#">Home</a></li>
+                <li class="design-color"><a href="#">Features</a></li>
+                <li class="caution-color"><a href="#">Blog</a></li>
+                <li class="success-color"><a href="#">Archieve</a></li>
+                <li class="design-color"><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <div id="search">
+            <form action="#" method="GET">
+                <input type="text" name="main_search_field" id="main_search_field" placeholder="Search...">
+                <input type="submit" value="" name="main_search_submit" id="main_search_submit">
+            </form>
+        </div>
+    </header>
     <!-- Js section -->
     <!-- <script src="js/dist/all.js"></script> -->
 
     <!-- The following js is just for dev and needs to be removed when in prod. -->
-    <script src="dist/vendor/modules/base/base.js"></script>
+    <!-- <script src="dist/vendor/modules/base/base.js"></script> -->
     <!-- <script src=""></script> -->
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

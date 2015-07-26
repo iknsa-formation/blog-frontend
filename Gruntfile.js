@@ -59,7 +59,11 @@ module.exports = function(grunt) {
             },
             js: {
                 files: ['vendor/**/*.js'],
-                tasks: ['concat:js']
+                tasks: ['copy:js']
+            },
+            img: {
+                files: ['vendor/**/*.{png,jpg,jpeg,gif,bmp}'],
+                tasks: ['copy:img']
             }
         },
 
@@ -87,11 +91,6 @@ module.exports = function(grunt) {
                     // },
                     // includes files within path and its sub-directories 
                     {
-                        expand: true,
-                        src: ['vendor/**/*.js'],
-                        dest: 'dist/'
-                    },
-                    {
                         expand: true, flatten: true,
                         src: ['vendor/fonts/**/*'], 
                         dest: '<%= paths.fonts %>'
@@ -107,6 +106,24 @@ module.exports = function(grunt) {
                         dest: '<%= paths.img %>'
                     }
                 ],
+            },
+            js: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['vendor/**/*.js'],
+                        dest: 'dist/'
+                    },
+                ]
+            },
+            img: {
+                files: [
+                    {
+                        expand: true,
+                        src: ['vendor/**/*.{png,jpg,jpeg,gif,bmp}'],
+                        dest: 'dist/'
+                    },
+                ]
             }
         },
 
@@ -118,9 +135,9 @@ module.exports = function(grunt) {
                 src : [
                     'bower_components/normalize.css/normalize.css',
                     'bower_components/ks-normalize/dist/css/ks-normalize.min.css',
-                    'bower_components/ks-buttons/dist/css/ks-buttons.min.css'
+                    // 'bower_components/ks-buttons/dist/css/ks-buttons.min.css'
                 ],
-                dest: '<%= paths.css %>/lib.css',
+                dest: '<%= paths.css %>/normalize.css',
             },
             // lib_js: {
             //     src : [
@@ -162,12 +179,11 @@ module.exports = function(grunt) {
 
     grunt.registerTask('dev', [
         "compass",
-        "concat"
+        "copy"
     ]);
 
     grunt.registerTask('build', [
         'clean:dist', 'compass', 'copy', 'concat'
-        // 'clean:dist', 'concat'
     ]);
 
     grunt.registerTask("default", ['build']);

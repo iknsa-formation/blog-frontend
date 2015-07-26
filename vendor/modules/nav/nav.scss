@@ -1,0 +1,74 @@
+@import "../variables";
+
+nav
+{
+    float: left;
+    font-size: 6px;
+    margin-left: 20px;
+
+    a {
+        padding: 21px 10px;
+        font-size: 14px;
+        color: #FFF;
+        margin: 0px;
+        font-weight: bold;
+        font-family: "Droid Sans",helvetica,arial,sans-serif;
+        text-transform: uppercase;
+        display: inline-block;
+    }
+
+    li {
+        border-right: 3px solid transparent;
+
+        &:last-child {
+            border-right: none;
+        }
+    }
+
+    .dark-color {
+        &:hover {
+            background:$dark-color - 100;
+        }
+    }
+    .darker-color {
+        &:hover {
+            background:$darker-color - 100;
+        }
+    }
+    .light-color {
+        &:hover {
+            background:$light-color - 100;
+        }
+    }
+    .lighter-color {
+        &:hover {
+            background:$lighter-color - 100;
+        }
+    }
+    .primary-color {
+        &:hover {
+            background:$primary-color - 100;
+        }
+    }
+    .common-color {
+        &:hover {
+            background:$common-color - 100;
+        }
+    }
+    .design-color {
+        &:hover {
+            background:$design-color - 100;
+        }
+    }
+    .caution-color {
+        &:hover {
+            background:$caution-color - 100;
+        }
+    }
+    .success-color {
+        &:hover {
+            background:$success-color - 100;
+        }
+    }
+
+}

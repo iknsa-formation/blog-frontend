@@ -1,0 +1,39 @@
+@import "../variables";
+
+a
+{
+    text-decoration: none;
+    color: inherit;
+
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
+.dark-color {
+    background:$dark-color;
+}
+.darker-color {
+    background:$darker-color;
+}
+.light-color {
+    background:$light-color;
+}
+.lighter-color {
+    background:$lighter-color;
+}
+.primary-color {
+    background:$primary-color;
+}
+.common-color {
+    background:$common-color;
+}
+.design-color {
+    background:$design-color;
+}
+.caution-color {
+    background:$caution-color;
+}
+.success-color {
+    background:$success-color;
+}
