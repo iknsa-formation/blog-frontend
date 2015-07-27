@@ -7,6 +7,31 @@
 body
 {
     padding-top: 90px;
+}
+
+img.bg-img
+{
+    min-width: 100%;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: -2;
+    position: fixed;
+}
+
+div.image-bg
+{
+    background: transparent url("img/pattern.png") repeat scroll 0% 0%;
+    z-index: -1;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top: 0px;
+    left: 0px;
+}
+
+.main-container
+{
     background: #F3F3F3;
 }
 
