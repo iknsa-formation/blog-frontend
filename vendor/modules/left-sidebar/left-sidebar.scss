@@ -3,21 +3,72 @@
 .left-sidebar
 {
     width: 24%;
-    border-left: 1px solid #E3E3E3;
-    border-right: 1px solid #E3E3E3;
-    background:$light-color;
+    background: transparent;
     float: left;
 
     h5 {
+        border-left: 1px solid #E3E3E3;
+        border-right: 1px solid #E3E3E3;
         font-family: $title-font-family;
         font-size: 16px;
         font-weight: bold;
-        background:$success-color;
+        background:$primary-color;
         color: $light-color;
         border-top: 1px solid #E3E3E3;
         border-bottom: 1px solid #E3E3E3;
         margin: 0;
         padding: 5px 25px;
         line-height: 35px;
+    }
+
+    .featured {
+
+        article {
+            position: relative;
+            margin: 15px 0 20px;
+
+
+            &:hover {
+                text-decoration: underline;
+            }
+
+            img {
+                max-width: 100%;
+            }
+
+            div {
+                background:$lighter-color;
+
+                h2 {
+                    background:$lighter-color;
+                    width: 92%;
+                    margin: 0 auto;
+                    position: relative;
+                    top: -40px;
+                    font-family: iknsa;
+                    font-weight: 400;
+                    padding: 15px;
+                    font-size: 18px;
+                    color: lighten($dark-color, 4)
+                }
+            }
+
+            a {
+                position: absolute;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                left: 0;
+            }
+        }
+    }
+
+    .popular-posts {
+        article.mini-presentation {
+            &:hover {
+                text-decoration: underline;
+                background: rgba($light-color, 0.7)
+            }
+        }
     }
 }
