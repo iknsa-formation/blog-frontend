@@ -1,0 +1,37 @@
+@import "../variables";
+
+.article-infos
+{
+    // overflow: auto;
+
+    .article-author {
+        overflow: auto;
+        figure {
+            width: 100px;
+            height: 100px;
+            border: 1px solid darken($light-color, 3);
+            @include border-radius(50px);
+            overflow: hidden;
+            float: left;    
+        }
+
+        .details {
+            float: right;
+            width: calc(100% - 125px);
+
+            h3 {
+                margin: 5px 0;
+                a {
+                    text-decoration: none;
+                    font-size: 16px;
+                    font-family: $design-font-family;
+                }
+            }
+
+            p {
+                margin: 10px 0;
+                padding-top: 0;
+            }
+        }
+    }
+}

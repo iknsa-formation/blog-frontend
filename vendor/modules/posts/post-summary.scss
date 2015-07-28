@@ -39,29 +39,30 @@ main
         padding: 15px;
         color: $dark-color;
 
-        ul {
+        ul.breadcrumb {
             padding-bottom: 15px;
-        }
-        li {
+            
+            li {
 
-            &:after {
-                content: ' \25CF';
-                font-size: 8px;
-                position: relative;
-                top: -2px;
-                padding: 0 3px;
-            }
-
-            &:last-child {
                 &:after {
-                    content: none;
+                    content: ' \25CF';
+                    font-size: 8px;
+                    position: relative;
+                    top: -2px;
+                    padding: 0 3px;
                 }
-            }
 
-            a {
-                text-transform: uppercase;
-                font-size: 10px;
-                color: $dark-color;
+                &:last-child {
+                    &:after {
+                        content: none;
+                    }
+                }
+
+                a {
+                    text-transform: uppercase;
+                    font-size: 10px;
+                    color: $dark-color;
+                }
             }
         }
 

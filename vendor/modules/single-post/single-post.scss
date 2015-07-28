@@ -1,0 +1,35 @@
+@import "../variables";
+
+.single-post
+{
+    text-align: left;
+
+    .details-container {
+        .details {
+            margin-top: 0;
+
+            h1 {
+                font-size: 30px;
+            }
+
+            .row {
+                clear: both;
+                overflow: auto;
+            }
+
+            figure {
+                margin-top: 20px;
+            }
+
+            .content {
+                float: left;
+
+                p {
+                    font-size: 16px;
+                    line-height: 24px;
+                    font-family: $common-font-family;
+                }
+            }
+        }
+    }
+}

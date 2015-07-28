@@ -1,0 +1,116 @@
+@import "../variables";
+
+.all-comments
+{
+    background:$light-color;
+    padding: 15px;
+
+    .number-comments {
+        text-transform: lowercase;
+        font-size: 13px;
+        color: $dark-color;
+    }
+
+    .comment {
+        padding: 7px;
+        background: lighten($caution-color, 35);
+        border-bottom: 3px solid $caution-color;
+        margin-bottom: 10px;
+        @include border-radius(3px);
+
+        .comment-info {
+            @include border-radius(3px);
+            background:lighten($primary-color, 55);
+            overflow: auto;
+            padding: 5px;
+
+            .btn.remove {
+                float: right;
+                font-size: 12px;
+                display: inline-block;
+                background:darken($design-color, 15);
+                color: $lighter-color;
+                font-weight: 600;
+                padding: 5px 10px;
+                margin-left: 15px;
+                @include border-radius(3px);
+
+                &:hover {
+                    background:darken($design-color, 25);
+                    text-decoration: none;
+                }
+            }
+
+            .date {
+                font-size: 14px;
+                color: lighten($dark-color, 25);
+                float: right;
+                padding-top: 5px;
+                display: inline-block;
+            }
+
+            h3 {
+                margin: 0;
+                color: lighten($dark-color, 20);
+                font-size: 14px;
+            }
+        }
+
+        .comment-detail {
+            margin: 10px 0;
+            overflow: auto;
+
+            figure {
+                background:$light-color;
+                display: inline-block;
+                width: 76px;
+                height: 76px;
+                overflow: hidden;
+                border: 3px solid lighten($design-color, 20);
+                float: left;
+
+                img {
+                    max-width: 76px;
+                    max-height: 76px;
+                }
+            }
+            .content {
+                width: calc(100% - 85px);
+                float: right;
+                background: $light-color;
+                padding: 20px 10px;
+            }
+        }
+
+        .comment-options {
+            width: calc(100% - 85px);
+            margin-left: 90px;
+            margin-bottom: 25px;
+            margin-top: 10px;
+            float: right;
+            clear: both;
+
+            .primary-btn {
+                padding: 5px 10px;
+                color: $light-color;
+                background:$primary-color;
+                @include border-radius(3px);
+
+                &:hover {
+                    background: darken($primary-color, 10);
+                    text-decoration: none;
+                }
+            }
+        }
+
+        .comment-reply {
+            .comment {
+                overflow: auto;
+                clear: both;
+                margin-left: 20px;
+                padding: 0;
+                border-bottom: 0;
+            }
+        }
+    }
+}
