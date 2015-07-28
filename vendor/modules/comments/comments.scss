@@ -16,7 +16,12 @@
         background: lighten($caution-color, 35);
         border-bottom: 3px solid $caution-color;
         margin-bottom: 10px;
+        margin-top: 20px;
         @include border-radius(3px);
+
+        &:first-child {
+            margin-top: 0;
+        }
 
         .comment-info {
             @include border-radius(3px);
