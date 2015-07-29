@@ -1,0 +1,41 @@
+@import "../variables";
+
+.comment-new
+{
+    .comment {
+        background:lighten($primary-color, 50);
+    }
+
+    form {
+        width: calc(100% - 85px);
+        float: right;
+
+        textarea {
+            width: 100%;
+            max-width: 100%;
+            min-height: 100px;
+            margin-bottom: 10px;
+            padding: 10px 15px;
+        }
+
+        button {
+            background: $design-color;
+            border: 0;
+            @include border-radius(3px);
+            color: $light-color;
+            padding: 5px 10px;
+
+            &:hover {
+                background:darken($design-color, 10);
+            }
+        }
+    }
+
+    h6 {
+        font-weight: 400;
+        font-family: $design-font-family;
+        font-size: 16px;
+        color: lighten($dark-color, 10);
+        margin: 10px 0;
+    }
+}

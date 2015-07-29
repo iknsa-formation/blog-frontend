@@ -35,6 +35,7 @@
 
     <!-- Specific comments css -->
     <link rel="stylesheet" href="dist/vendor/modules/comments/comments.css">
+    <link rel="stylesheet" href="dist/vendor/modules/comments/comment-new.css">
 
 </head>
 <body>
@@ -202,6 +203,13 @@
 
                         <div class="comment-options">
                             <a href="#" class="btn primary-btn">Reply</a>
+
+                            <ul>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#">:+1</a></li>
+                                <li><a href="#">:-1</a></li>
+                                <li><a href="#">:-)</a></li>
+                            </ul>
                         </div>
                         <!-- If reply -->
                         <div class="comment-reply">
@@ -215,6 +223,15 @@
                                 <div class="comment-detail">
                                     <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
                                     <div class="content">Lorem ipsum dolor sit amet, consectetur adit maxime, quidem numquam itaque fugit?</div>
+                                </div>
+
+                                <div class="comment-options">
+                                    <ul>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">:+1</a></li>
+                                        <li><a href="#">:-1</a></li>
+                                        <li><a href="#">:-)</a></li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -231,13 +248,42 @@
                                         <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
                                         <div class="content">Lorem ipsum dolor sit amet, consectetur adit maxime, quidem numquam itaque fugit?</div>
                                     </div>
+
+                                    <div class="comment-options">
+                                        <ul>
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">:+1</a></li>
+                                            <li><a href="#">:-1</a></li>
+                                            <li><a href="#">:-)</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div><!-- End .comment-reply -->
 
+                            <div class="comment-new">
+                                <div class="comment">
+                                    <div class="comment-info">
+                                        <span class="date">23 January 2015 at 07h98</span>
+                                        <h3><a href="#">Khalid Sookia</a></h3>
+                                    </div>
+
+                                    <div class="comment-detail">
+                                        <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
+                                        <div class="new">
+                                            <form action="#" class="new_comment">
+                                                <textarea name="new-comment" id="new-comment"></textarea>
+                                                <button type="submit" value="" name="submit_new_comment" id="submit_new_comment" class="btn design-btn">Leave comment</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End .comment-new -->
 
                         </div><!-- End .comment-reply -->
+
                     </div><!-- End .comment -->
 
+                    <!-- Second comment -->
                     <div class="comment">
                         <div class="comment-info">
                             <span><a href="#" class="btn danger-btn remove">Remove</a></span>
@@ -252,6 +298,12 @@
 
                         <div class="comment-options">
                             <a href="#" class="btn primary-btn">Reply</a>
+                            <ul>
+                                <li><a href="#">Edit</a></li>
+                                <li><a href="#">:+1</a></li>
+                                <li><a href="#">:-1</a></li>
+                                <li><a href="#">:-)</a></li>
+                            </ul>
                         </div>
                         <!-- If reply -->
                         <div class="comment-reply">
@@ -265,6 +317,15 @@
                                 <div class="comment-detail">
                                     <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
                                     <div class="content">Lorem ipsum dolor sit amet, consectetur adit maxime, quidem numquam itaque fugit?</div>
+                                </div>
+
+                                <div class="comment-options">
+                                    <ul>
+                                        <li><a href="#">Edit</a></li>
+                                        <li><a href="#">:+1</a></li>
+                                        <li><a href="#">:-1</a></li>
+                                        <li><a href="#">:-)</a></li>
+                                    </ul>
                                 </div>
                             </div>
 
@@ -281,24 +342,74 @@
                                         <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
                                         <div class="content">Lorem ipsum dolor sit amet, consectetur adit maxime, quidem numquam itaque fugit?</div>
                                     </div>
+
+                                    <div class="comment-options">
+                                        <ul>
+                                            <li><a href="#">Edit</a></li>
+                                            <li><a href="#">:+1</a></li>
+                                            <li><a href="#">:-1</a></li>
+                                            <li><a href="#">:-)</a></li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div><!-- End .comment-reply -->
+                            
+                            <div class="comment-new">
+                                <div class="comment">
+                                    <div class="comment-info">
+                                        <span class="date">23 January 2015 at 07h98</span>
+                                        <h3><a href="#">Khalid Sookia</a></h3>
+                                    </div>
 
+                                    <div class="comment-detail">
+                                        <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
+                                        <div class="new">
+                                            <form action="#" class="new_comment">
+                                                <textarea name="new-comment" id="new-comment"></textarea>
+                                                <button type="submit" value="" name="submit_new_comment" id="submit_new_comment" class="btn design-btn">Leave comment</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div><!-- End .comment-new -->
 
                         </div><!-- End .comment-reply -->
-                    </div><!-- End .comment -->
-                </div><!-- End .all-comments -->
-            </section>
 
-            <aside class="pagination">
-                <span><a href="#">First</a></span>
-                <span><a href="#">Previous</a></span>
-                <span class="current">3</span>
-                <span><a href="#">4</a></span>
-                <span><a href="#">5</a></span>
-                <span><a href="#">Next</a></span>
-                <span><a href="#">Last</a></span>
-            </aside>
+
+                    </div><!-- End .comment -->
+
+                    <div class="comment-new">
+                        <div class="comment">
+                            <h6>Leave your comment</h6>
+                            <div class="comment-info">
+                                <span class="date">23 January 2015 at 07h98</span>
+                                <h3><a href="#">Khalid Sookia</a></h3>
+                            </div>
+
+                            <div class="comment-detail">
+                                <figure><img src="dist/vendor/modules/single-post/img/photo.jpg" alt=""></figure>
+                                <div class="new">
+                                    <form action="#" class="new_comment">
+                                        <textarea name="new-comment" id="new-comment"></textarea>
+                                        <button type="submit" value="" name="submit_new_comment" id="submit_new_comment" class="btn design-btn">Leave comment</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div><!-- End .comment-new -->
+
+                    <aside class="pagination">
+                        <span><a href="#">First</a></span>
+                        <span><a href="#">Previous</a></span>
+                        <span class="current">3</span>
+                        <span><a href="#">4</a></span>
+                        <span><a href="#">5</a></span>
+                        <span><a href="#">Next</a></span>
+                        <span><a href="#">Last</a></span>
+                    </aside>
+                </div><!-- End .all-comments -->
+
+            </section>
         </main>
         <aside class="right-sidebar">
             <aside class="featured">

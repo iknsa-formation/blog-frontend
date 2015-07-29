@@ -23,6 +23,10 @@
             margin-top: 0;
         }
 
+        &:last-child {
+            // margin-bottom: 20px;
+        }
+
         .comment-info {
             @include border-radius(3px);
             background:lighten($primary-color, 55);
@@ -106,13 +110,26 @@
                     text-decoration: none;
                 }
             }
+
+            ul {
+                float: right;
+                margin-right: 10px;
+
+                li {
+                    a {
+                        display: inline-block;
+                        font-size: 13px;
+                        color: $dark-color;
+                    }
+                }
+            }
         }
 
         .comment-reply {
             .comment {
                 overflow: auto;
                 clear: both;
-                margin-left: 20px;
+                margin-left: 40px;
                 padding: 0;
                 border-bottom: 0;
             }
